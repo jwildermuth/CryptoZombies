@@ -86,6 +86,20 @@
         });
       }
 
+      function levelUp(zombieId) {
+        $("#txStatus").text("Leveling up your zombie...");
+        // Send the tx to our contract:
+        return cryptoZombies.methods.levelUp(zombieId)
+        .send({ from: userAccount, value: web3js.utils.toWei("0.001", "ether") })
+        .on("receipt", function(receipt) {
+          $("#txStatus").text("Power overwhelming! Zombie successfully leveled up");
+        })
+        .on("error", function(error) {
+          // Do something to alert the user their transaction has failed
+          $("#txStatus").text(error);
+        });
+      }
+
       function getZombieDetails(id) {
         return cryptoZombies.methods.zombies(id).call()
       }
