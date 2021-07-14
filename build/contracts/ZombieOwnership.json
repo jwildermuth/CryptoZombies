@@ -4160,7 +4160,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.1",
-  "updatedAt": "2021-07-14T14:23:26.711Z",
+  "updatedAt": "2021-07-14T16:28:56.682Z",
   "devdoc": {
     "author": "Jason Wildermuth",
     "details": "Zombie ownership functions that are ERC721 compliant",

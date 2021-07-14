@@ -672,7 +672,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.1",
-  "updatedAt": "2021-07-14T14:23:26.681Z",
+  "updatedAt": "2021-07-14T16:28:56.663Z",
   "devdoc": {
     "methods": {
       "approve(address,uint256)": {
